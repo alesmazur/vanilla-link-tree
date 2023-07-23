@@ -1,0 +1,123 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Open sans", sans-serif;
+  background: url("./img/bcg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+}
+main {
+  position: relative;
+  z-index: 10;
+  padding: 2em 1em;
+  margin: 0 auto;
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+}
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000a;
+  font-size: 1.5em;
+  gap: 1em;
+}
+
+header > img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header > h1 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 1em;
+  padding: 0.3em 1.6em;
+  border: 1px solid #fffa;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px) saturate(120%) contrast(120%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%) contrast(120%);
+}
+
+/* LINKS */
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 2em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul > li {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px) saturate(120%) contrast(120%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%) contrast(120%);
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 0 1 auto;
+  border: 1px solid transparent;
+  border-radius: 10em;
+  padding: 1em;
+  margin: 1.5em 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  max-width: 650px;
+  min-width: 300px;
+  transition: all 0.2s ease;
+}
+
+ul > li:hover,
+ul > li:focus {
+  border: 1px solid #fffa;
+  text-decoration: underline !important;
+  text-underline-offset: 0.5em;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px) saturate(120%) contrast(150%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%) contrast(150%);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul > li > a {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  color: black;
+}
+
+/* VANTA animation*/
+#vanta {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+}
